@@ -1,8 +1,8 @@
-require("dotenv").config();
 var express = require("express");
 var bodyParser = require("body-parser");
 var request = require("request");
 const https = require("https");
+require("dotenv").config();
 
 const app = express();
 
@@ -75,8 +75,3 @@ app.listen(process.env.PORT || 3000, function() { //works both on heroku and loc
     console.log("Server is running on 3000")
 })
 
-//Api key
-//fb14ddd5f058cf92fb1033665a29c682-us1
-
-// List id
-// d5ec89d04f
